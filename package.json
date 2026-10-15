@@ -1,0 +1,19 @@
+{
+  "name": "jogo2d",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --open /",
+    "build": "vite build",
+    "preview": "vite preview --open /"
+  },
+  "dependencies": {
+    "@dimforge/rapier2d-compat": "0.21.0",
+    "lil-gui": "0.21.0",
+    "three": "0.186.1"
+  },
+  "devDependencies": {
+    "vite": "^7.2.2"
+  }
+}
