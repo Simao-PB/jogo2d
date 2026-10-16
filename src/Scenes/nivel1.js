@@ -5,6 +5,8 @@ import { criarPlataforma } from '../Prefabs/plataforma.js';
 import { criarSprite } from '../Materials/sprite.js';
 import { adicionarRigidbody, adicionarBoxCollider, sincronizarFisica } from '../Scripts/Fisica.js';
 import { DebugFisica } from '../Scripts/DebugFisica.js';
+import { Player } from '../Scripts/Player.js';
+import GUI from 'lil-gui'; 
 
 const renderer = new THREE.WebGLRenderer({ antialias: true });
 renderer.setPixelRatio(window.devicePixelRatio);
@@ -65,7 +67,16 @@ async function iniciarNivel() {
   }
   mostrarHierarquia(scene);
 
-  const scripts = [new DebugFisica(scene, fisica)];
+  const playerScript = new Player(player);
+
+  const scripts = [
+    new DebugFisica(scene, fisica),
+    playerScript
+  ];
+
+  const gui = new GUI({ title: 'Inspector' });
+  gui.add(playerScript, 'movementSpeed', 0, 10, 0.1);
+
   const PASSO_FIXO = 1 / 50;
   fisica.timestep = PASSO_FIXO;
   let acumulador = 0;

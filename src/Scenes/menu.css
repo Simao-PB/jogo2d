@@ -1,0 +1,81 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Fredoka', sans-serif;
+}
+
+#gui {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+
+  background-image: url('/assets/Sprites/Objects/BG.png');
+  background-size: cover;
+  background-position: center;
+}
+
+h1 {
+  font-size: 50px;
+  color: #ffffff;
+  text-shadow: 3px 3px 5px #594020;
+  margin: 0;
+  text-align: center;
+}
+
+#dinossauro {
+  width: 220px;
+  max-width: 70vw;
+}
+
+#gui button {
+  width: 200px;
+  padding: 12px;
+  font-family: 'Fredoka', sans-serif;
+  font-size: 20px;
+
+  color: white;
+  background-color: #548c32;
+  border: 2px solid #345c20;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#gui button:hover {
+  background-color: #70aa45;
+}
+
+
+.creditos h2 {
+  color: #ffffff;
+  font-size: 30px;
+  margin: 10px;
+}
+
+.creditos p {
+  color: white;
+  font-size: 20px;
+  margin: 5px;
+  text-align: center;
+}
+
+.creditos .botao {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+
+  background-color: #548c32;
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  border: 2px solid #345c20;
+  border-radius: 10px;
+}
+
+.creditos .botao:hover {
+  background-color: #70aa45;
+}

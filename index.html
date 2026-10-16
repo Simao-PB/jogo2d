@@ -1,19 +1,26 @@
+
 <!doctype html>
-<html lang="pt-PT">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="/favicon.svg" />
-    <title>Nível 1</title>
-    <style>
-      body { margin: 0; overflow: hidden; }
-      canvas { display: block; }
-      #erro { position: fixed; inset: 20px auto auto 20px; max-width: 600px;
-        padding: 20px; background: white; color: #18253b; border-radius: 8px;
-        font: 16px/1.5 system-ui; white-space: pre-wrap; }
-    </style>
-  </head>
-  <body>
-    <script type="module" src="/src/Scenes/nivel1.js"></script>
-  </body>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aventura do Dino</title>
+</head>
+<body>
+  <div id="gui">
+    <h1>Aventura do Dino</h1>
+
+    <img
+      id="dinossauro"
+      src="/assets/Sprites/Player/Idle (1).png"
+      alt="Dinossauro"
+    >
+
+    <button id="btnPlay">Jogar</button>
+    <button id="btnCredits">Créditos</button>
+    <button id="btnQuit">Sair</button>
+  </div>
+
+  <script type="module" src="/src/Scenes/menu.js"></script>
+</body>
 </html>
